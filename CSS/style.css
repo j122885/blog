@@ -18,7 +18,7 @@ header {
 }
 
 .sidebar {
-  left: 0;
+  left: 4;
   width: 160px;
   height: 100%;
   position: absolute;
