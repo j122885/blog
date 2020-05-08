@@ -8,11 +8,12 @@ header {
     width: 100%;
 }
 #colorBar{
-    background: #ff5a3d;
-    width: 100%; height: 50px;
+    background: black;
+    width: 100%; height: 40px;
     border-style: solid;
-    border-color: #ff5a3d;
-    background-color: #ff5a3d;
+    border-color: chartreuse;
+    border-bottom: solid black;
+    background-color: chartreuse;
     padding: 10px;
 }
 .sidebar{
@@ -70,7 +71,7 @@ header {
 #section1 h1{
     
     font-family:'Lilita One', cursive;
-    color: #ff5a3d;
+    color: rgb(123, 247, 0);
     font-size: 30px;
 
 }
@@ -101,10 +102,10 @@ footer{
     padding: 20px;
     position: relative;
     align-content: center;
-    border-top: solid #ff5a3d;
+    border-top: solid chartreuse;
     margin-top: 60px;
 }
 footer p1{
     padding-left: 160px;
-   color: #ff5a3d;
+   color: chartreuse;
 }
