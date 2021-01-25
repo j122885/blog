@@ -1,3 +1,7 @@
+html {
+  opacity: 1;
+}
+
 header {
   background-color: #1e1f38;
   padding: 1%;
@@ -5,6 +9,7 @@ header {
   font-family: 'Lilita One', cursive;
   color: white;
   width: 100%;
+  word-wrap: break-word;
 }
 
 #colorBar {
@@ -19,10 +24,8 @@ header {
 }
 
 .sidebar {
-  left: 15%;
-  width: 160px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,95 +33,86 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 40%;
-  color: #1e1f38;
-  font-family: 'Lilita One', cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-@media screen and (max-width: 798px) {
-  .sidebar {
-    display: none;
-  }
-  #section1, #section2 {
-    margin-left: -160px;
-  }
-  footer {
-    padding-left: 0px;
-    margin-left: -160px;
-  }
-  #colorBar {
-    height: 30px;
-  }
+.card p {
+  font-size: 15px;
+  width: 100%;
 }
 
 #author {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  padding-left: 40px;
+  margin-top: 300px;
+  color: #1e1f38;
+  font-family: 'Lilita One', cursive;
 }
 
 #picture {
   border-radius: 50%;
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
-#section1 {
-  padding-left: 160px;
+h1 {
   padding-top: 10%;
-}
-
-#section2 {
-  padding-left: 160px;
-  padding-top: 2%;
-}
-
-#section1 h1 {
   font-family: 'Lilita One', cursive;
   color: #000000;
   font-size: 40px;
-  max-width: 80%;
+  word-break: break-word;
 }
 
-#section2 h3, #section3 h3 {
+.inline {
+  display: inline-block;
+}
+
+.appearance {
+  opacity: 0;
+}
+
+h3 {
   font-family: 'Lilita One', cursive;
   color: #1e1f38;
   font-size: 25px;
 }
 
-#section2 h2 {
+h2 {
   font-family: 'Lilita One', cursive;
   color: black;
   font-size: 30px;
   padding-bottom: 10px;
-}
-
-#spacing {
-  max-width: 80%;
-}
-
-#section3, #section4 {
+  word-break: break-word;
   padding-top: 2%;
+}
+
+p {
+  font-size: 20px;
 }
 
 footer {
   background-color: #1e1f38;
   padding: 20px;
   position: relative;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  text-align: center;
   border-top: solid chartreuse;
-  display: inline-block;
+  margin-top: 2%;
 }
 
 footer p {
-  padding-left: 160px;
   color: chartreuse;
   display: inline-block;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  #author {
+    margin-top: 10px;
+  }
+  .appearance {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
